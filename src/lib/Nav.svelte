@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Logo from './logo.svelte';
+	import { page } from '$app/state';
 	
 	let isMenuOpen = $state(false);
 	let scrolled = $state(false);
@@ -22,21 +23,21 @@
 	});
 </script>
   
-<nav class="fixed w-full z-50 transition-all duration-300 {scrolled ? 'bg-white shadow-md' : 'bg-white'}">
+<nav class="{page.url.pathname === '/' ? 'fixed' : 'sticky'} top-0 w-full z-50  {scrolled ? 'bg-white shadow-md transition-all duration-800' : 'bg-transparent transition-all duration-800'} {isMenuOpen ? 'bg-white shadow-md' : 'bg-transparent'}">
 	<div class="container mx-auto px-4 md:px-6">
 	  <!-- Desktop Navigation -->
 	  <div class="hidden md:flex items-center justify-center relative">
 	    <div class="flex-1 flex justify-end mr-12">
 	      <!-- Left Navigation Links -->
 	      <div class="flex space-x-10 items-center">
-	        <a href="/catering" class="text-gray-800 hover:text-gray-600 transition text-lg font-medium">Catering</a>
-	        <a href="/farmers-market" class="text-gray-800 hover:text-gray-600 transition text-lg font-medium">Farmers Market</a>
+	        <a href="/catering" class="text-gray-800 hover:text-gray-600 transition text-lg font-bold">Catering</a>
+	        <a href="/farmers-market" class="text-gray-800 hover:text-gray-600 transition text-lg font-bold whitespace-nowrap">Farmers Market</a>
 	      </div>
 	    </div>
 	    
 	    <!-- Centered Logo -->
-	    <div class="flex-shrink-0 px-24">
-	      <a href="/" class="inline-block">
+	    <div class="flex-shrink-0 lg:px-24 px-12">
+	      <a href="/" class="inline-block hover:opacity-80">
 	        <Logo />
 	      </a>
 	    </div>
@@ -44,7 +45,7 @@
 	    <div class="flex-1 flex justify-start ml-12">
 	      <!-- Right Navigation Links -->
 	      <div class="flex space-x-10 items-center">
-	        <a href="/about" class="text-gray-800 hover:text-gray-600 transition text-lg font-medium">About Us</a>
+	        <a href="/about" class="text-gray-800 hover:text-gray-600 transition text-lg font-bold whitespace-nowrap">About Us</a>
 	      
 	        <a href="https://www.instagram.com/pier303seafood/" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-pink-600 transition">
 	          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -57,6 +58,16 @@
 
 	  <!-- Mobile Navigation -->
 	  <div class="md:hidden flex justify-between items-center">
+	    <!-- Empty div to maintain flex spacing -->
+	    <div class="w-6"></div>
+	    
+	    <!-- Centered Mobile Logo -->
+	    <div class="flex justify-center">
+	      <a href="/" class="inline-block">
+	        <Logo />
+	      </a>
+	    </div>
+	    
 	    <!-- Mobile Menu Button -->
 	    <button class="text-gray-800" onclick={toggleMenu}>
 	      {#if isMenuOpen}
@@ -69,21 +80,11 @@
 	        </svg>
 	      {/if}
 	    </button>
-	    
-	    <!-- Centered Mobile Logo -->
-	    <div class="flex justify-center">
-	      <a href="/" class="inline-block">
-	        <Logo />
-	      </a>
-	    </div>
-	    
-	    <!-- Empty div to maintain flex spacing -->
-	    <div class="w-6"></div>
 	  </div>
 	  
 	  <!-- Mobile Menu -->
 	  {#if isMenuOpen}
-	    <div class="md:hidden pt-4 pb-2">
+	    <div class="md:hidden pt-4 pb-4">
 	      <div class="flex flex-col space-y-4 items-center">
 	        <a href="/catering" class="text-gray-800 hover:text-gray-600 transition text-xl font-medium">Catering</a>
 	        <a href="/farmers-market" class="text-gray-800 hover:text-gray-600 transition text-xl font-medium">Farmers Market</a>
@@ -100,4 +101,4 @@
 </nav>
   
 <!-- Spacer to prevent content from being hidden behind the fixed navbar -->
-<div class="h-16"></div>
+<!-- <div class="h-16"></div> -->
