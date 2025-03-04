@@ -41,6 +41,7 @@
 		]
 	},
 	"dependencies": {
-		"@sveltejs/enhanced-img": "^0.4.4"
+		"@sveltejs/enhanced-img": "^0.4.4",
+		"@vercel/analytics": "^1.5.0"
 	}
 }
