@@ -24,7 +24,7 @@
 			property="og:description"
 			content="Fresh seafood in Enterprise, Oregon. Open Wed-Fri, 11AM-4PM. Visit us at 303 NW Garfield St or call (541) 426-2677."
 		/>
-		<meta property="og:image" content="https://pier303seafood.com/og-image.jpg" />
+		<meta property="og:image" content="https://pier303seafood.com/hero.jpeg" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@
 			property="twitter:description"
 			content="Fresh seafood in Enterprise, Oregon. Open Wed-Fri, 11AM-4PM. Visit us at 303 NW Garfield St or call (541) 426-2677."
 		/>
-		<meta property="twitter:image" content="https://pier303seafood.com/og-image.jpg" />
+		<meta property="twitter:image" content="https://pier303seafood.com/hero.jpeg" />
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href="https://pier303seafood.com/" />
@@ -45,7 +45,7 @@
 				"@context": "https://schema.org",
 				"@type": "FoodEstablishment",
 				"name": "Pier 303 Seafood Market",
-				"image": "https://pier303seafood.com/store-image.jpg",
+				"image": "https://pier303seafood.com/hero.jpeg",
 				"@id": "https://pier303seafood.com",
 				"url": "https://pier303seafood.com",
 				"telephone": "(541) 426-2677",
@@ -73,7 +73,28 @@
 					}
 				],
 				"servesCuisine": "Seafood",
-				"description": "Fresh seafood market in Enterprise, Oregon offering quality fish and seafood products."
+				"description": "Fresh seafood market in Enterprise, Oregon offering quality fish and seafood products.",
+				"sameAs": ["https://www.instagram.com/pier303seafood/"],
+				"event": {
+					"@type": "Event",
+					"name": "Joseph Farmers Market",
+					"startDate": "2025-05-24",
+					"endDate": "2025-10-25",
+					"location": {
+						"@type": "Place",
+						"name": "Wallowa County Farmers Market",
+						"address": {
+							"@type": "PostalAddress",
+							"addressLocality": "Joseph",
+							"addressRegion": "OR"
+						},
+						"offers": {
+							"@type": "Offer",
+							"availability": "https://schema.org/Weekly",
+							"description": "Fresh seafood available every Saturday, 9am-2pm, Memorial Day through October"
+						}
+					}
+				}
 			}
 		</script>
 
