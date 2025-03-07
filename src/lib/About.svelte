@@ -159,7 +159,7 @@
 			<div class="mb-16 grid gap-12">
 				{#each brandCategories as category}
 					<div>
-						<h4 class="mb-4 border-b border-gray-600/60 pb-2 text-xl font-semibold text-cyan-800">
+						<h4 class="mb-4 border-b border-gray-600/60 pb-2 text-xl font-semibold text-cyan-900">
 							{category.title}
 						</h4>
 
