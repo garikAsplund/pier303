@@ -9,7 +9,7 @@
 
 <svelte:window bind:scrollY />
 
-<main class="relative flex min-h-screen flex-col">
+<main class="relative flex min-h-screen flex-col scroll-smooth">
 	<Nav {scrollY} />
 	{@render children()}
 	<Footer />

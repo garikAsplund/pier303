@@ -1,28 +1,35 @@
+<script lang="ts">
+	import Logo from './logo.svelte';
+</script>
+
 <div class="relative">
 	<!-- Hero Image -->
-	<div class="relative h-[85vh] w-full">
+	<div class="relative h-[75vh] w-full md:h-[87vh]">
 		<!-- Blue gradient overlay (top to bottom) -->
-		<div class="absolute inset-0 z-10 bg-gradient-to-b from-blue-300/70 to-black/30"></div>
+		<div class="absolute inset-0 z-40 bg-gradient-to-b from-blue-300/70 to-black/30"></div>
 		<enhanced:img
 			src="/static/hero.jpeg"
 			alt="Fresh seafood"
-            class="h-full w-full object-cover object-top xl:object-[center_35%]"
-            />
+			class="h-full w-full object-cover object-top xl:object-[center_10%]"
+			fetchpriority="high"
+			loading="eager"
+		/>
 
 		<!-- Hero Content -->
-		<div class="absolute inset-0 z-20 flex items-center -translate-y-4 justify-center px-4 text-center drop-shadow-xl">
-			<div class="max-w-3xl">
-				<h1
-					class="text-shadow-lg mb-6 text-4xl leading-snug font-bold text-white md:text-5xl lg:text-6xl"
-				>
-					Fresh Seafood in <br />Wallowa County
-				</h1>
-			</div>
+		<div
+			class="absolute inset-0 z-40 flex flex-col items-center justify-center px-4 text-center text-white drop-shadow-xl md:-translate-y-4"
+		>
+			<Logo />
+			<h1
+				class="text-shadow-lg font-poiret mb-6 text-4xl leading-snug font-bold md:text-5xl lg:text-6xl"
+			>
+				Fresh Seafood in Wallowa County
+			</h1>
 		</div>
 	</div>
 
 	<!-- Info Bar -->
-	<div class="bg-white py-6 shadow-md">
+	<div class="relative z-40 w-full scroll-mt-12 bg-white py-6 shadow-md" id="contact">
 		<div class="container mx-auto px-4 md:px-6">
 			<div class="grid grid-cols-1 gap-6 text-center md:grid-cols-3 md:text-left">
 				<!-- Hours -->

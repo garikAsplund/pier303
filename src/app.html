@@ -4,6 +4,79 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Basic SEO Meta Tags -->
+		<title>Pier 303 Seafood Market | Fresh Seafood in Enterprise, Oregon</title>
+		<meta
+			name="description"
+			content="Visit Pier 303 Seafood Market in Enterprise, Oregon for the freshest seafood. Open Wednesday to Friday, 11:00 AM - 4:00 PM. Call us at (541) 426-2677."
+		/>
+		<meta
+			name="keywords"
+			content="seafood market, fresh seafood, Enterprise Oregon, Pier 303, fish market"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://pier303seafood.com/" />
+		<meta property="og:title" content="Pier 303 Seafood Market | Enterprise, Oregon" />
+		<meta
+			property="og:description"
+			content="Fresh seafood in Enterprise, Oregon. Open Wed-Fri, 11AM-4PM. Visit us at 303 NW Garfield St or call (541) 426-2677."
+		/>
+		<meta property="og:image" content="https://pier303seafood.com/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://pier303seafood.com/" />
+		<meta property="twitter:title" content="Pier 303 Seafood Market | Enterprise, Oregon" />
+		<meta
+			property="twitter:description"
+			content="Fresh seafood in Enterprise, Oregon. Open Wed-Fri, 11AM-4PM. Visit us at 303 NW Garfield St or call (541) 426-2677."
+		/>
+		<meta property="twitter:image" content="https://pier303seafood.com/og-image.jpg" />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://pier303seafood.com/" />
+
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FoodEstablishment",
+				"name": "Pier 303 Seafood Market",
+				"image": "https://pier303seafood.com/store-image.jpg",
+				"@id": "https://pier303seafood.com",
+				"url": "https://pier303seafood.com",
+				"telephone": "(541) 426-2677",
+				"email": "pier303seafood@gmail.com",
+				"priceRange": "$$",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "303 NW Garfield St",
+					"addressLocality": "Enterprise",
+					"addressRegion": "OR",
+					"postalCode": "97828",
+					"addressCountry": "US"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 45.4293,
+					"longitude": -117.2807
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+						"opens": "11:00",
+						"closes": "16:00"
+					}
+				],
+				"servesCuisine": "Seafood",
+				"description": "Fresh seafood market in Enterprise, Oregon offering quality fish and seafood products."
+			}
+		</script>
+
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
