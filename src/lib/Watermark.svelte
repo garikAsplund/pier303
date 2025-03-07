@@ -4,7 +4,6 @@
 	<div
 		class="flex items-center justify-center gap-2 border-t border-neutral-400/40 pt-4 text-sm text-neutral-600 dark:border-neutral-800/20 dark:text-neutral-400"
 	>
-	<!-- <div class="absolute inset-0 bg-gradient-to-b from-white to-none z-10"></div> -->
 		Website by <a
 			href="https://garik.codes"
 			target="_blank"
