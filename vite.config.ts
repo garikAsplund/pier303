@@ -11,8 +11,8 @@ export default defineConfig({
 		sveltekit(),
 		tailwindcss()
 	],
-	optimizeDeps: {
-		// Force Vite to not cache these image-related modules
-		exclude: ['vite-imagetools', 'imagetools-core']
-	}
+	// optimizeDeps: {
+	// 	// Force Vite to not cache these image-related modules
+	// 	exclude: ['vite-imagetools', 'imagetools-core']
+	// }
 });
