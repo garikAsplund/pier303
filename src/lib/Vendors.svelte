@@ -103,7 +103,7 @@
 						{#each category.brands as brand}
 							<div class="mb-2 break-inside-avoid">
 								{#if brand.link}
-									<a href={brand.link} class="text-gray-700 hover:text-cyan-700 hover:underline">
+									<a href={brand.link} class="text-gray-700 hover:text-cyan-700 hover:underline" rel="noopener noreferrer" target="_blank">
 										{brand.name}
 									</a>
 								{:else}
