@@ -133,7 +133,7 @@
 					<div class="overflow-hidden rounded-lg shadow-md">
 						<enhanced:img
 							src="/static/sangria.jpg"
-							alt="Fresh seafood display at market"
+							alt="More than just seafood!"
 							class="aspect-square w-full object-cover object-bottom"
 							loading="lazy"
 						/>
@@ -143,7 +143,7 @@
 					<div class="overflow-hidden rounded-lg shadow-md">
 						<enhanced:img
 							src="/static/taco.jpg"
-							alt="Customers at our market booth"
+							alt="Fish tacos"
 							class="aspect-square w-full object-cover"
 							loading="lazy"
 						/>

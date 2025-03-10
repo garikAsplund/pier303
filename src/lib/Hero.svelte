@@ -10,7 +10,7 @@
 			<div class="absolute inset-0 z-40 bg-gradient-to-b from-blue-300/70 to-black/30"></div>
 			<enhanced:img
 				src="/static/hero.jpeg"
-				alt="Fresh seafood"
+				alt="Fresh seafood for Wallowa County, Oregon"
 				class="h-full w-full object-cover object-top xl:object-[center_10%]"
 				fetchpriority="high"
 				loading="eager"

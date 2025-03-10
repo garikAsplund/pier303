@@ -13,5 +13,5 @@
 	<FarmersMarket />
 	<enhanced:img src="/static/divider.jpeg" alt="Grilling" class="h-[600px] w-full object-cover" />
 	<Catering />
-	<enhanced:img src="/static/divider2.jpeg" alt="Grilling" class="h-[600px] w-full object-cover" />
+	<enhanced:img src="/static/divider2.jpeg" alt="Salmon" class="h-[600px] w-full object-cover" />
 </div>

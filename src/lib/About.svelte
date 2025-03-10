@@ -14,7 +14,7 @@
 				'Matiz',
 				'Zach&Zoe',
 				'Chico Rice',
-				'Garza',
+				'Graza',
 				'Mementa',
 				'Ginger People',
 				'Toadfish',
@@ -31,8 +31,8 @@
 				'La Monarca',
 				'Pure Indian Foods',
 				'Rumi',
-				'Maxi Masa',
-				'San Juan Sea Salt',
+				'Masi Masa',
+				'San Juan Island Sea Salt',
 				'Jacobsen Co',
 				'Verve Culture',
 				'Son',
@@ -57,7 +57,9 @@
 				'Real Conserva',
 				'Mantova',
 				'Valente Market',
-				'Fischer & Wieser'
+				'Fischer & Wieser',
+				'River Wave Foods',
+				'Aneto Natural'
 			]
 		},
 		{
@@ -76,7 +78,7 @@
 			title: 'Local Partnerships',
 			type: 'list',
 			description: 'We proudly source from local farms and producers to support our community:',
-			brands: ['Park Street Farmette', 'Lazy Mule Farm', 'Alder Slope Nursery'],
+			brands: ['Park Street Farmette', 'Lazy Mule Farm', 'Alder Slope Nursery', 'NP Ranch Honey'],
 			iconColor: 'text-green-600'
 		}
 	];
@@ -115,7 +117,7 @@
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
 							src="/static/tuna.jpg"
-							alt="Fresh seafood display"
+							alt="Fresh seafood on display"
 							class="mb-4 h-64 w-full rotate-180 rounded-md object-cover"
 							loading="lazy"
 						/>
@@ -127,7 +129,7 @@
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
 							src="/static/grabbag.jpg"
-							alt="Our storefront"
+							alt="Our offerings"
 							class="mb-4 h-64 w-full rounded-md object-cover"
 							loading="lazy"
 						/>
@@ -140,8 +142,8 @@
 					<!-- Photo 3 -->
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
-							src="/static/shrimp.jpg"
-							alt="Preparing seafood"
+							src="/static/ceviche.jpg"
+							alt="Prepared seafood"
 							class="mb-4 h-64 w-full rounded-md object-cover"
 							loading="lazy"
 						/>
