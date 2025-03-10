@@ -2,7 +2,7 @@
 	import Watermark from './Watermark.svelte';
 </script>
 
-<footer class="relative mt-auto w-full bg-gray-200 py-8">
+<footer class="relative mt-auto w-full bg-teal-200 py-8">
 	<div class="container mx-auto px-4">
 		<!-- Back to top button -->
 		<div class="absolute -top-6 right-4 md:right-8"></div>

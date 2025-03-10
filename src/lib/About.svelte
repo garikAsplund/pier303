@@ -1,87 +1,5 @@
-<script>
+<script lang="ts">
 	import Seafood from './Seafood.svelte';
-
-	const brandCategories = [
-		{
-			title: 'Specialty Brands',
-			type: 'grid',
-			brands: [
-				'Momofuku',
-				'Mina',
-				'Masienda',
-				'Xilli',
-				'Fishwife',
-				'Matiz',
-				'Zach&Zoe',
-				'Chico Rice',
-				'Graza',
-				'Mementa',
-				'Ginger People',
-				'Toadfish',
-				'Food To Live',
-				'Patagonia',
-				'Bokksu',
-				'Siesta Co.',
-				'Ekone',
-				'River Wave Foods',
-				'MOB',
-				'La Bonnemer',
-				'Tiny Fish Co',
-				'Rustic Bakery',
-				'La Monarca',
-				'Pure Indian Foods',
-				'Rumi',
-				'Masi Masa',
-				'San Juan Island Sea Salt',
-				'Jacobsen Co',
-				'Verve Culture',
-				'Son',
-				'Wok Mei',
-				'Bianco',
-				'Coca Cola',
-				'Di Bruno Bros.',
-				'Morenita',
-				'Sierra Nevada',
-				"Eichten's Cheese",
-				'ThaiFusions Co',
-				'Los Roasts',
-				"Mama Lil's",
-				'Paladini',
-				'Sea Change Seafoods',
-				'Occo',
-				'Made by Mama',
-				'School of Wok',
-				'Hop Water',
-				'Charity Leaf',
-				'Nueats',
-				'Real Conserva',
-				'Mantova',
-				'Valente Market',
-				'Fischer & Wieser',
-				'River Wave Foods',
-				'Aneto Natural'
-			]
-		},
-		{
-			title: 'Premium Seafood Partners',
-			type: 'list',
-			brands: [
-				'Taylor Shellfish Seafood',
-				'Hawaiian Fresh Seafood',
-				'Peterson Plus',
-				'Santa Monica Seafood',
-				"Luke's Lobster"
-			],
-			iconColor: 'text-cyan-600'
-		},
-		{
-			title: 'Local Partnerships',
-			type: 'list',
-			description: 'We proudly source from local farms and producers to support our community:',
-			brands: ['Park Street Farmette', 'Lazy Mule Farm', 'Alder Slope Nursery', 'NP Ranch Honey'],
-			iconColor: 'text-green-600'
-		}
-	];
 </script>
 
 <section id="about">
@@ -151,29 +69,6 @@
 						<p class="text-gray-600">Eat your heart out.</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="flex w-full justify-center bg-sky-300">
-		<div class="mt-16 flex max-w-4xl flex-col items-center">
-			<h3 class="mb-8 text-center text-2xl font-bold text-slate-900">Our Curated Brands</h3>
-
-			<div class="mb-16 grid gap-12">
-				{#each brandCategories as category}
-					<div>
-						<h4 class="mb-4 border-b border-gray-600/60 pb-2 text-xl font-semibold text-cyan-900">
-							{category.title}
-						</h4>
-
-						<div class="mt-4 columns-1 gap-x-6 sm:columns-2 md:columns-3 lg:columns-4">
-							{#each category.brands as brand}
-								<div class="mb-2 break-inside-avoid">
-									<span class="text-gray-700">{brand}</span>
-								</div>
-							{/each}
-						</div>
-					</div>
-				{/each}
 			</div>
 		</div>
 	</div>
