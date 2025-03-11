@@ -34,7 +34,7 @@
 					<!-- Photo 1 -->
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
-							src="/static/tuna.jpg"
+							src="/static/tuna.jpg?w=600;300"
 							alt="Fresh seafood on display"
 							class="mb-4 h-64 w-full rotate-180 rounded-md object-cover"
 							loading="lazy"
@@ -46,7 +46,7 @@
 					<!-- Photo 2 -->
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
-							src="/static/grabbag.jpg"
+							src="/static/grabbag.jpg?w=600;300"
 							alt="Our offerings"
 							class="mb-4 h-64 w-full rounded-md object-cover"
 							loading="lazy"
@@ -60,7 +60,7 @@
 					<!-- Photo 3 -->
 					<div class="flex-1 rounded-lg bg-white p-3 shadow-md">
 						<enhanced:img
-							src="/static/ceviche.jpg"
+							src="/static/ceviche.jpg?w=600;300"
 							alt="Prepared seafood"
 							class="mb-4 h-64 w-full rounded-md object-cover"
 							loading="lazy"

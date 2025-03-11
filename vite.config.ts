@@ -7,6 +7,8 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [
 		// imageWatcherPlugin(),
+		// imageCacheBuster(),
+        //...other plugins...
 		enhancedImages(),
 		sveltekit(),
 		tailwindcss()

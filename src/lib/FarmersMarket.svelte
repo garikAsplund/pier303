@@ -122,7 +122,7 @@
 					<!-- Photo 1 -->
 					<div class="col-span-2 overflow-hidden rounded-lg shadow-md">
 						<enhanced:img
-							src="/static/clams.jpg"
+							src="/static/clams.jpg?w=600;300"
 							alt="Our farmers market booth"
 							class="h-96 w-full object-cover"
 							loading="lazy"
@@ -132,7 +132,7 @@
 					<!-- Photo 2 -->
 					<div class="overflow-hidden rounded-lg shadow-md">
 						<enhanced:img
-							src="/static/sangria.jpg"
+							src="/static/sangria.jpg?w=600;300"
 							alt="More than just seafood!"
 							class="aspect-square w-full object-cover object-bottom"
 							loading="lazy"
@@ -142,7 +142,7 @@
 					<!-- Photo 3 -->
 					<div class="overflow-hidden rounded-lg shadow-md">
 						<enhanced:img
-							src="/static/taco.jpg"
+							src="/static/taco.jpg?w=600;300"
 							alt="Fish tacos"
 							class="aspect-square w-full object-cover"
 							loading="lazy"
