@@ -30,7 +30,7 @@
 		</div>
 
 		<!-- Info Bar -->
-		<div class="relative z-40 w-full scroll-mt-12 bg-white py-6 shadow-md" id="contact">
+		<div class="relative z-40 w-full bg-white py-6 shadow-md" id="contact">
 			<div class="container mx-auto px-4 md:px-6">
 				<div class="grid grid-cols-1 gap-6 text-center md:grid-cols-3 md:text-left">
 					<!-- Hours -->
