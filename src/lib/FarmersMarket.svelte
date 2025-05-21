@@ -10,8 +10,8 @@
 				<div class="mb-4 h-32 w-32">
 					<Shell />
 				</div>
-				<h2 class="mb-3 text-center text-4xl font-bold text-gray-800">Farmers Market</h2>
-				<div class="mb-6 h-1 w-24 rounded bg-violet-900"></div>
+				<h2 class="mb-3 text-center text-6xl font-bold font-poiret text-gray-800">Farmers Market</h2>
+				<div class="mb-6 h-0.5 w-48 rounded bg-violet-900"></div>
 			</div>
 
 			<div class="grid items-center gap-12 md:grid-cols-2">

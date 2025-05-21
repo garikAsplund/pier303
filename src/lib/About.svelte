@@ -10,8 +10,8 @@
 				<div class=" mb-8 flex justify-center">
 					<Seafood />
 				</div>
-				<h1 class="mb-4 text-center text-4xl font-bold text-teal-800 md:text-5xl">About Us</h1>
-				<div class="mb-8 h-1 w-24 rounded bg-teal-500"></div>
+				<h1 class="mb-4 text-center text-6xl font-bold font-poiret text-teal-800 md:text-5xl">About Us</h1>
+				<div class="mb-8 h-0.5 w-48 rounded bg-teal-500"></div>
 
 				<!-- About Us Blurb -->
 				<div class="mb-16 max-w-3xl text-center">

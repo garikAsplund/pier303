@@ -1,5 +1,7 @@
 <script lang="ts">
+	import Hours from './Hours.svelte';
 	import Logo from './logo.svelte';
+	import baseLd from '$lib/ld.json';
 </script>
 
 <section id="#contact">
@@ -34,7 +36,7 @@
 			<div class="container mx-auto px-4 md:px-6">
 				<div class="grid grid-cols-1 gap-6 text-center md:grid-cols-3 md:text-left">
 					<!-- Hours -->
-					<div class="flex flex-col items-center gap-3 md:flex-row md:items-start">
+					<!-- <div class="flex flex-col items-center gap-3 md:flex-row md:items-start">
 						<div class="rounded-full bg-cyan-100 p-3">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,8 @@
 							<p class="text-gray-600">Wednesday - Friday</p>
 							<p class="text-gray-600">11:00 AM - 4:00 PM</p>
 						</div>
-					</div>
+					</div> -->
+					<Hours {baseLd}/>
 
 					<!-- Location -->
 					<div class="flex flex-col items-center gap-3 md:flex-row md:items-start">

@@ -39,11 +39,18 @@
 					href="#top"
 					class="text-sm font-normal text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
 					>Contact</a
-				><a
+				>
+				<a
+					href="#specials"
+					class="text-sm font-normal whitespace-nowrap text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
+					>Specials</a
+				>
+				<a
 					href="#about"
 					class="text-sm font-normal whitespace-nowrap text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
 					>About Us</a
-				><a
+				>
+				<a
 					href="#vendors"
 					class="text-sm font-normal text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
 					>Our Vendors</a
@@ -52,6 +59,11 @@
 					href="#farmers-market"
 					class="text-sm font-normal whitespace-nowrap text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
 					>Farmers Market</a
+				>
+				<a
+					href="#map"
+					class="text-sm font-normal whitespace-nowrap text-gray-900 transition hover:text-gray-600 md:text-lg md:font-bold"
+					>Find Us</a
 				>
 				<!-- <a
 					href="https://www.instagram.com/pier303seafood/"

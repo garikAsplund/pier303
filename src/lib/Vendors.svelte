@@ -87,33 +87,45 @@
 	];
 </script>
 
-<div class="flex w-full justify-center bg-sky-300" id="vendors">
-	<div class="mt-16 flex max-w-4xl flex-col items-center">
-		<div class="flex w-full justify-center">
-			<Sardines />
-		</div>
-		<h3 class="mb-8 text-center text-4xl font-bold text-slate-900">Our Vendors</h3>
-		<div class="mb-16 grid gap-12">
-			{#each brandCategories as category}
-				<div>
-					<h4 class="mb-4 border-b border-gray-600/60 pb-2 text-xl font-semibold text-cyan-900">
-						{category.title}
-					</h4>
-					<div class="mt-4 columns-1 gap-x-6 sm:columns-2 md:columns-3 lg:columns-4">
-						{#each category.brands as brand}
-							<div class="mb-2 break-inside-avoid">
-								{#if brand.link}
-									<a href={brand.link} class="text-gray-700 hover:text-cyan-700 hover:underline" rel="noopener noreferrer" target="_blank">
-										{brand.name}
-									</a>
-								{:else}
-									<span class="text-gray-700">{brand.name}</span>
-								{/if}
-							</div>
-						{/each}
-					</div>
+<section id="vendors">
+	<div class="flex w-full justify-center bg-sky-300">
+		<div class="mt-16 flex max-w-4xl flex-col items-center">
+			<div class="mb-12 flex flex-col items-center">
+				<div class="flex w-full justify-center">
+					<Sardines />
 				</div>
-			{/each}
+				<h2 class="font-poiret mb-3 text-center text-6xl font-bold text-gray-800">
+					Our Vendors
+				</h2>
+				<div class="mb-6 h-0.5 w-48 rounded bg-sky-900"></div>
+			</div>
+			<div class="mb-16 grid gap-12">
+				{#each brandCategories as category}
+					<div>
+						<h4 class="mb-4 border-b border-gray-600/60 pb-2 text-xl font-semibold text-cyan-900">
+							{category.title}
+						</h4>
+						<div class="mt-4 columns-1 gap-x-6 sm:columns-2 md:columns-3 lg:columns-4">
+							{#each category.brands as brand}
+								<div class="mb-2 break-inside-avoid">
+									{#if brand.link}
+										<a
+											href={brand.link}
+											class="text-gray-700 hover:text-cyan-700 hover:underline"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											{brand.name}
+										</a>
+									{:else}
+										<span class="text-gray-700">{brand.name}</span>
+									{/if}
+								</div>
+							{/each}
+						</div>
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
-</div>
+</section>
