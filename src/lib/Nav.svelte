@@ -50,8 +50,10 @@
 
 	<!-- mobile overlay -->
 	<div
-		class="fixed inset-0 z-50 h-screen transform bg-white/20
-         !backdrop-blur-lg transition-transform duration-300 md:hidden"
+		class="fixed inset-0 z-50 h-screen transform 
+         transition-transform duration-300 md:hidden
+         will-change-transform"
+		style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);"
 		class:translate-x-0={isMenuOpen}
 		class:translate-x-full={!isMenuOpen}
 	>
