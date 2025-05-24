@@ -51,7 +51,7 @@
 	<!-- mobile overlay -->
 	<div
 		class="fixed inset-0 z-50 h-screen transform bg-white/20
-         backdrop-blur-lg transition-transform duration-300 md:hidden"
+         !backdrop-blur-lg transition-transform duration-300 md:hidden"
 		class:translate-x-0={isMenuOpen}
 		class:translate-x-full={!isMenuOpen}
 	>
