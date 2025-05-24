@@ -16,6 +16,19 @@
 		['#farmers-market', 'Farmers Market'],
 		['#map', 'Find Us']
 	];
+
+	$effect(() => {
+		if (isMenuOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+		
+		// Cleanup on unmount
+		return () => {
+			document.body.style.overflow = '';
+		};
+	});
 </script>
 
 <nav
