@@ -23,7 +23,7 @@
 		} else {
 			document.body.style.overflow = '';
 		}
-		
+
 		// Cleanup on unmount
 		return () => {
 			document.body.style.overflow = '';
@@ -32,8 +32,8 @@
 </script>
 
 <nav
-	class="fixed inset-x-0 top-0 z-50 w-full h-12 md:h-auto transition-all
-    {scrolled ? 'md:bg-white/30 md:shadow backdrop-blur-md' : 'bg-transparent'}"
+	class="fixed inset-x-0 top-0 z-50 h-12 w-full transition-all md:h-auto
+    {scrolled ? 'backdrop-blur-md md:bg-white/30 md:shadow' : 'bg-transparent'}"
 >
 	<div class="flex w-full items-center justify-between px-4 py-4">
 		<!-- desktop -->
@@ -43,17 +43,20 @@
 			{/each}
 		</ul>
 		<!-- hamburger / close -->
-		<button class="md:hidden absolute top-2 right-4 text-2xl z-60" onclick={() => (isMenuOpen = !isMenuOpen)}>
+		<button
+			class="absolute top-2 right-4 z-60 text-2xl md:hidden"
+			onclick={() => (isMenuOpen = !isMenuOpen)}
+		>
 			{isMenuOpen ? '✕' : '☰'}
 		</button>
 	</div>
 
 	<!-- mobile overlay -->
-<div
-		class="fixed inset-0 z-50 h-screen transform bg-white/20
-         backdrop-blur-lg transition-transform duration-300 md:hidden
-         will-change-transform supports-[backdrop-filter]:backdrop-blur-lg"
-		style="backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);"
+	<div
+		class="mobile-menu-overlay fixed inset-0 z-50 h-screen transform
+         transition-transform duration-300 will-change-transform
+         md:hidden"
+		style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);"
 		class:translate-x-0={isMenuOpen}
 		class:translate-x-full={!isMenuOpen}
 	>
@@ -71,3 +74,14 @@
 		</ul>
 	</div>
 </nav>
+
+<style>
+	.mobile-menu-overlay {
+		transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		perspective: 1000;
+	}
+</style>
